@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
@@ -20,5 +21,13 @@ class HomepageController extends Controller
     public function homepageAction(): array
     {
         return [];
+    }
+
+    /**
+     * @Route("/", name="default")
+     */
+    public function defaultAction(): Response
+    {
+        return $this->redirectToRoute('homepage');
     }
 }
