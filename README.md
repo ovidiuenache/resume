@@ -1,4 +1,5 @@
-#Ioan Ovidiu Enache: Resume
+Ioan Ovidiu Enache - Resume
+
 Technology stack:
 - PHP 7.1
 - MySQL 5.7.20
